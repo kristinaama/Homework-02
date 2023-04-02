@@ -1,0 +1,169 @@
+/* Universal Selector */
+* {
+  margin:0;
+  padding:0;  
+}
+
+/*Navigation Header*/
+header {
+  background-color: rgb(250,241,231);
+  border-bottom: 3px solid rgb(239,213,182);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  font-size:48px;
+  margin-left: 20px;
+  text-align: left;
+  color: #000000;
+  font-family: cursive, italic;
+  font-size: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li::before,
+nav li::after {
+  content: "|";
+  margin: 5px;
+}
+
+nav ul li {
+    padding: 17px 10px;
+  }
+
+nav ul li a {
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+/*shared section styles*/
+h2 {
+  font-size: 24 px;
+  color: black;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 28px;
+}
+
+section {
+  /* border-bottom: 1px solid #d8a47f; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex: 3;
+}
+
+#absolute-section {
+  position: relative;
+}
+
+/* Main Section- Kristina*/
+.mainphotoscontainer {
+  display: flex;
+  flex-shrink: 2;
+  padding: 2px;
+  justify-content: space-around;
+}
+
+#Kristina img {
+  max-width: 500px;
+}
+
+.mainphotos {
+  margin: 2px
+}
+
+/*Sidebar*/
+.about-section, .project-section, .contact-section, .resume-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(250,241,231);
+  display:inline-block;
+  border-right: 3px solid rgb(239,213,182);
+}
+
+.description {
+  display: flex;
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+  display:inline-block;
+}
+
+/* My Projects */
+
+.projectscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  margin: 2px;
+}
+
+#project1 {
+  position: relative;
+  left: 220px;
+  transform: scale(2.05, 1);
+}
+
+
+@media screen and (max-width: 768px) {
+  main,
+  .about-section,
+  .project-section,
+  .contact-section,
+  .resume-section {
+    flex-direction: column;
+  }
+}
+
+/*Contact Me*/
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.description ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description li::before,
+.description li::after {
+  content: "|";
+  margin: 5px;
+}
+
+.description ul li {
+    padding: 17px 10px;
+  }
+
+.description ul li a {
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+/* My Resume */
